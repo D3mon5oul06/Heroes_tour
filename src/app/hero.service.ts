@@ -6,7 +6,13 @@ import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 import { MessageService } from './message.service';
 
+ add-navegation
 @Injectable({ providedIn: 'root' })
+
+@Injectable({
+  providedIn: 'root',
+})
+
 export class HeroService {
 
   constructor(private messageService: MessageService) { }
@@ -15,6 +21,7 @@ export class HeroService {
     const heroes = of(HEROES);
     this.messageService.add('HeroService: fetched heroes');
     return heroes;
+ add-navegation
   }
 
   getHero(id: number): Observable<Hero> {
@@ -25,3 +32,5 @@ export class HeroService {
     return of(hero);
   }
 }
+
+  }
