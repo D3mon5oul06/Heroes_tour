@@ -2,12 +2,13 @@
 
 h2 {
     text-align: center;
-}
-
-.heroes-menu {
+  }
+  
+  .heroes-menu {
     padding: 0;
     margin: auto;
     max-width: 1000px;
+  
     /* flexbox */
     display: -webkit-box;
     display: -moz-box;
@@ -19,9 +20,9 @@ h2 {
     justify-content: space-around;
     align-content: flex-start;
     align-items: flex-start;
-}
-
-a {
+  }
+  
+  a {
     background-color: #3f525c;
     border-radius: 2px;
     padding: 1rem;
@@ -34,19 +35,20 @@ a {
     min-width: 70px;
     margin: .5rem auto;
     box-sizing: border-box;
+  
     /* flexbox */
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
-
-@media (min-width: 600px) {
+  }
+  
+  @media (min-width: 600px) {
     a {
-        width: 18%;
-        box-sizing: content-box;
+      width: 18%;
+      box-sizing: content-box;
     }
-}
-
-a:hover {
+  }
+  
+  a:hover {
     background-color: black;
-}
+  }
